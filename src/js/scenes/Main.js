@@ -490,7 +490,7 @@ class Main extends Phaser.Scene
     updateScores(num)
     {
         Main.score += num;
-        if (Main.score >= Main.highScore)
+        if (Main.score > Main.highScore)
         {
             Main.highScore += num;
         }
