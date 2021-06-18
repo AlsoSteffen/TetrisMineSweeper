@@ -13,5 +13,6 @@ elements to it, with blocks either being mines or safe blocks.
 * Use the mouse buttons to open blocks or flag them
 
 ## Information
-As you play along, the game keeps track of your score and gets more difficult.
-Make sure not to open a mine or let the blocks reach the top, or you explode!
+* As you play along, the game keeps track of your score and gets more difficult.
+* Make sure not to open a mine or let the blocks reach the top, or you explode!
+* To make a line burst, all the mines need to be flagged on that line, and all blocks which aren't mines need to be opened

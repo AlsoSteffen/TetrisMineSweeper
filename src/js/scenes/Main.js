@@ -619,24 +619,28 @@ class Main extends Phaser.Scene
         this.sound.mute = !this.sound.mute;
     }
 
+    /**
+     * Increases the volume of the game
+     */
     increaseVolume()
     {
         // Only need to check for this.music since they all have the same volume level
-        if (this.music.volume < 10)
+        if (this.music.volume < 1.0)
         {
-            console.log(1);
             this.music.volume += 0.1;
             this.elevatorMusic.volume += 0.1;
             this.explosionSound.volume += 0.1;
         }
     }
 
+    /**
+     * Decreases the volume of the game
+     */
     decreaseVolume()
     {
         // Only need to check for this.music since they all have the same volume level
-        if (this.music.volume > 0)
+        if (this.music.volume > 0.1)
         {
-            console.log(1);
             this.music.volume -= 0.1;
             this.elevatorMusic.volume -= 0.1;
             this.explosionSound.volume -= 0.1;
@@ -757,6 +761,7 @@ class Main extends Phaser.Scene
         if (!this.started)
         {
             this.elevatorMusic.setVolume(0.2);
+            this.explosionSound.setVolume(0.2);
             this.music.setVolume(0.2);
 
             this.text.setText('Start Game');
